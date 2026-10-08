@@ -10,7 +10,7 @@ describe('Suite Ampliada de Pruebas Unitarias para Endpoints de la API (60 tests
   test('1. GET /api/status - Debe retornar status "online" y 200 OK', async () => {
     const res = await request(app).get('/api/status');
     expect(res.statusCode).toBe(200);
-    expect(res.body).toHaveProperty('status', 'online');
+    expect(res.body).toHaveProperty('status', 'online probando');
   });
 
   test('2. GET /api/db/backup - Debe retornar el archivo binario del respaldo', async () => {
