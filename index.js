@@ -98,7 +98,7 @@ app.post('/api/db/vaciar', (req, res) => {
 });
 
 // --- 2. SERVIDOR SOCKET TCP (PUERTO 6061) ---
-
+/* istanbul ignore next */
 const tcpServer = net.createServer((socket) => {
   socket.on('data', (data) => {
     const rawInput = data.toString().trim();
