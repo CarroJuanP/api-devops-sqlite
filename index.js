@@ -12,7 +12,7 @@ const TCP_PORT = process.env.TCP_PORT || 6061;
 // --- 1. ENDPOINTS HTTP EXISTENTES ---
 
 app.get('/api/status', (req, res) => {
-  res.json({ status: 'online', timestamp: new Date() });
+  res.json({ status: 'online probando', timestamp: new Date() });
 });
 
 app.get('/api/categorias', (req, res) => {
